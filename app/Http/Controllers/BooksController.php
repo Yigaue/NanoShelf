@@ -39,7 +39,7 @@ class BooksController extends Controller
          return $this->validate(request(), [
 
             'title' => 'required',
-            'author' => 'required',
+            'author_id' => 'required',
         ]);
 
     }
