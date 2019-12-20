@@ -48,6 +48,7 @@ class BookManagementTest extends TestCase
     public function a_book_author_is_required()
     {
         $response = $this->post('/books', array_merge($this->data(), ['author_id' => '']));
+       
 
         $response->assertSessionHasErrors('author_id');
     }
